@@ -21,6 +21,7 @@ import { PresentarComponent } from "./secundarias/presentar/presentar.component"
 import { HeadComponent } from "./shared/head/head.component";
 
 import { Routes, RouterModule } from "@angular/router";
+import { LoginComponent } from './secundarias/login/login.component';
 
 const rutas: Routes = [];
 
@@ -37,7 +38,8 @@ const rutas: Routes = [];
     EquipoComponent,
     HacemosComponent,
     PresentarComponent,
-    HeadComponent
+    HeadComponent,
+    LoginComponent
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: "/my/app" }, MessageService],
   bootstrap: [AppComponent]

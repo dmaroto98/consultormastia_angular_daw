@@ -15,6 +15,7 @@ import { EquipoComponent } from './secundarias/equipo/equipo.component';
 import { HacemosComponent } from './secundarias/hacemos/hacemos.component';
 import { PresentarComponent } from './secundarias/presentar/presentar.component';
 import { HeadComponent } from './shared/head/head.component';
+import {LoginComponent} from './secundarias/login/login.component';
 
 const routes: Routes = [{ path: '', component: MainComponent },
 { path: 'main', component: MainComponent },
@@ -23,7 +24,8 @@ const routes: Routes = [{ path: '', component: MainComponent },
 { path: 'catalogo', component: CatalogoComponent},
 { path: 'consultar', component: ConsultarComponent},
 { path: 'presentar', component: PresentarComponent},
-{ path: 'contactanos', component: ContactanosComponent}
+{ path: 'contactanos', component: ContactanosComponent},
+{ path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
