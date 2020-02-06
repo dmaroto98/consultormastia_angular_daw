@@ -1,0 +1,4 @@
+npm install express cors mongoose
+npm install cors
+npm install mssql
+npm start

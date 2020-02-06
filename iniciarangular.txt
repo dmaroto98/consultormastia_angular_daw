@@ -1,0 +1,10 @@
+tener instalado node 
+instalar angular cli
+usar visual studio code para trabajar
+abrir cmd dentro de carpeta con angular project
+ng serve
+
+ng new crear nuevo proyecto
+
+ng generate component nombre
+

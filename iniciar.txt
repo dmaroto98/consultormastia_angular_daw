@@ -1,0 +1,4 @@
+ingresar a la carpeta angullar en el escritorio
+abrir cmd y ejecutar
+python manage.py runserver 8080 #en caso de querer cambiar el puerto 
+python manage.py runserver 0:8000 #en caso de cambiar ip y puerto

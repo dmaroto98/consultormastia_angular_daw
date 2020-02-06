@@ -1,0 +1,5 @@
+primero debe crear la base de datos en su computadora
+dentro de la carpeta /django/tia
+
+Python -m pip install mysqlclient
+Python manage.py runserver
