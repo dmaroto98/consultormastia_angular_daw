@@ -1,0 +1,137 @@
+<div class="container">
+  <br />
+  <div class="row borderDiv text-center" style="width: 85%; margin: 2.4% 0% -25% 7.5%;" id="bienvenido">
+      <img id="tarjeta" src="/static/img/Tarjeta-mas.png" width="150px">
+      <h1
+          style="margin: 0.4% 0% 0% 0%;font-family: 'pt_sans_narrowbold', Arial, sans-serif;font-weight: 900;font-size: 60pt;">
+          BIENVENIDA </h1>
+      <h2 id="bienvenido" style="margin: -0.8% 0% -0.8% 0%;"> Carlos Cunalata </h2>
+      <hr />
+      <div class="col-md-12">
+          <div class="col-md-6" id="puntos" style="margin: -15px -8% 0% 30px;">
+              TOTAL PUNTOS:<br /><span id="puntos_value" style="font-size: 60pt;">300</span>
+          </div>
+
+          <div class="col-md-6" id="puntos" style="margin: -15px 0% 0% 0px;">
+              PUNTOS POR VENCER:<br /><span style=" font-size: 60pt;">0</span>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-lg-2 justify-content-end">
+      <img class="tia" src="/static/img/tia.png" onclick="location.href='/'">
+  </div>
+  <div class="row">
+      <div class="col-md-12 text-left">
+          <div style="width: 75%; margin: 0 auto; text-align: left">
+              <hr />
+          </div>
+      </div>
+  </div>
+  <div class="row" id="bienvenido" style="margin: 0px 0px -9.7% -51px;">
+      PREMIOS POR CANJEAR
+  </div>
+
+  <!--Proceso realizado por Jquery-->
+  <div id="NPuntos" class="row" style="margin: 14.5% 0% 6% 0%;">
+      <div class="col-md-3" style="margin: 0% 0% 0% 0%;">
+          <img src="/static/img/masitos-01.png" width="100%">
+      </div>
+      <div class="col-md-9" style="margin: 0% 0% 0% 0%;">
+          <h1
+              style="margin: 12.5% 0% 0% 0%;font-family: 'pt_sans_narrowbold', Arial, sans-serif;font-weight: 600;font-size: 40pt;color:white;">
+              LO SENTIMOS<br>NO CUENTAS CON PUNTOS DISPONIBLES</h1>
+      </div>
+  </div>
+  <!--No hay premios disponibles-->
+  <div id="NPremios" class="row" style="margin: 14.5% 0% 6% 0%;">
+      <div class="col-md-3" style="margin: 0% 0% 0% 0%;">
+          <img src="/static/img/masitos-03.png" width="100%">
+      </div>
+      <div class="col-md-9" style="margin: 0% 0% 0% 0%;">
+          <h1
+              style="margin: 12.5% 0% 0% 0%;font-family: 'pt_sans_narrowbold', Arial, sans-serif;font-weight: 600;font-size: 40pt;color:white;">
+              LO SENTIMOS<br>NO CUENTAS CON PUNTOS SUFICIENTES</h1>
+      </div>
+  </div>
+  <!--Contamos con premios disponibles-->
+  <div id="YPremios" class="row" style="width: 100%;margin:9.8% 0px 0% -2%">
+      <div class="col-md-12">
+          <div class="carousel slide multi-item-carousel" id="theCarousel">
+              <div class="carousel-inner" id="carousel_premios_container">
+
+                  <!--Insertamos la caratula-->
+                  <div class="item active">
+                      <div class="col-xs-4">
+                          <div class="row" style="margin: 0% 0% 0% 0%;">
+                              <div class="col-md-3" style="margin: 0% 0% 0% 0%;">
+                                  <a><img src="" id="carousel_caratula" class="containerImg imageStyle"></a>
+                              </div>
+                          </div>
+                          <div class="row" style="margin: 0% 0% 0% 0%;">
+                              <div id="carousel_caratula_pts" class="col-md-7" style="margin: -4.8% 0% 0% 32%;display:none">
+                                  <span  class="pointsStyle" style="font-family: 'pt_sans_narrowbold', Arial, sans-serif;font-weight: 350;font-size: 22pt;color:white;"></span>
+                              </div>
+                              <div id="carousel_caratula_pts_dollars" class="col-md-8" style="margin: -4.8% 0% 0% 32%;display:none">
+                                  <span class="pointsStyle"
+                                      style="font-family: 'pt_sans_narrowbold', Arial, sans-serif;font-weight: 350;font-size: 22pt;color:white;">200 + $5.0</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                  <span><img src="/static/img/left.png" width="15%" style="margin: 36% 65% 0% 0%;"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                  <span><img src="/static/img/right.png" width="15%" style="margin: 36% 0% 0% 65%;"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="row" style="margin: 2.8% 0% 0% 0%;">
+  <div class="col-md-12 text-left">
+      <div style="width: 23.5%; margin: -15px auto; text-align: left">
+          <button type="button" class="btn btn-primary btn-lg" routerLink="/main">
+              <img id="btn-regresar" src="/static/img/btn-regresar.png" alt="">
+          </button>
+      </div>
+  </div>
+</div>
+
+
+
+
+<script>
+  var initial;
+
+  function invocation() {
+      initial = window.setTimeout(
+          function () {
+              window.location.href = "/";
+          }, 1500000);
+  }
+
+  invocation();
+
+  document.body.onclick = function () {
+      clearTimeout(initial);
+      invocation();
+  }
+
+</script>
+<script src="/static/js/presentar_load.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://afernandezgarcia.com/codepen/carousel/js/touchswipe.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://afernandezgarcia.com/codepen/carousel/js/bootstrap.js"></script>

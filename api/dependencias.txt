@@ -1,0 +1,5 @@
+instalar
+npm install express cors mongoose
+uso 
+npm start
+

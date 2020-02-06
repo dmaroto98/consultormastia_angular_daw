@@ -1,0 +1,30 @@
+button {
+  margin-top: 25px;
+}
+
+.consultar {
+  width: 15px;
+  height: 15px;
+  margin: 15px 0px 0px 0px;
+}
+
+footer {
+  margin-top: -28px;
+  width: 100%;
+  height: 200px;
+}
+
+.tia {
+  width: 160px;
+  height: 110px;
+  margin: -37.5% 0px 0px 169%;
+}
+
+#carouselExampleControls {
+  margin-top: 25px;
+}
+.containerImg {
+  width: 1259px;
+  height:890px;
+}
+

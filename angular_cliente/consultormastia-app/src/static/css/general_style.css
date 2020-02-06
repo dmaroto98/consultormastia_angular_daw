@@ -1,0 +1,20 @@
+body {
+    background-image: url('../img/fondo/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* Full height */
+}
+
+nav{
+	padding-top: 1rem;
+	}
+	#nav_tia{
+	height: 30px;
+    }
+    
+    #guia{
+        background-color: #FABB11 ;
+        
+    }

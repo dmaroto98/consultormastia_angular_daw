@@ -1,0 +1,157 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="min-height: 422px;">
+                    <div class="card-header">
+                        <h3>Actividades</h3>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="ik ik-chevron-left action-toggle"></i></li>
+                                <li><i class="ik ik-minus minimize-card"></i></li>
+                                <li><i class="ik ik-x close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body timeline">
+                        <div class="header bg-theme" style="background-image: url('https://cdn.jsdelivr.net/gh/luiacarr/tiaadmin@master/src/assets/background/placeimg_400_200_nature.jpg')">
+                            <div class="color-overlay d-flex align-items-center">
+                                <div class="day-number">{{today | date:'d'}}</div>
+                                <div class="date-right">
+                                    <div class="day-name">{{today | date:'EEEE'}}</div>
+                                    <div class="month">{{today | date:'LLLL'}} {{today | date:'yyyy'}}</div>
+                                </div>
+                            </div>                                
+                        </div>
+                        <ul>
+                            <li *ngFor="let actividad of actividades | async">
+                                <div class="bullet bg-green"></div>
+                                <div class="time">{{actividad.hour}}</div>
+                                <div class="desc">
+                                    <h3>{{actividad.incharge}}</h3>
+                                    <h4>{{actividad.desc}}</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header row">
+                <div class="col col-sm-3">
+                    <div class="dropdown d-inline-block">
+                        <a class="btn-icon checkbox-dropdown dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                            <a class="dropdown-item" id="checkbox_select_all" href="javascript:void(0);">Select All</a>
+                            <a class="dropdown-item" id="checkbox_deselect_all" href="javascript:void(0);">Deselect All</a>
+                        </div>
+                    </div>
+                    <div class="card-options d-inline-block">
+                        <a href="#"><i class="ik ik-inbox"></i></a>
+                        <a href="#"><i class="ik ik-plus"></i></a>
+                        <a href="#"><i class="ik ik-rotate-cw"></i></a>
+                        <div class="dropdown d-inline-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-more-horizontal"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">More Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-6">
+                    <div class="card-search with-adv-search dropdown">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="Search.." required>
+                            <button type="submit" class="btn btn-icon"><i class="ik ik-search"></i></button>
+                            <button type="button" id="adv_wrap_toggler" class="adv-btn ik ik-chevron-down dropdown-toggle" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="adv-search-wrap dropdown-menu dropdown-menu-right" aria-labelledby="adv_wrap_toggler">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <button class="btn btn-theme">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col col-sm-3">
+                    <div class="card-options text-right">
+                        <span class="mr-5">1 - 50 de 2,500</span>
+                        <a href="#"><i class="ik ik-chevron-left"></i></a>
+                        <a href="#"><i class="ik ik-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="list-item-wrap">
+                    <div class="list-item" *ngFor="let mail of mails | async">
+                        <div class="item-inner">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option1">
+                                <span class="custom-control-label">&nbsp;</span>
+                            </label>
+                            <div class="list-title"><a href="javascript:void(0)">{{mail.asunto}}</a></div>
+                            <div class="list-actions">
+                                <a href="#"><i class="ik ik-eye"></i></a>
+                                <a href="#"><i class="ik ik-inbox"></i></a>
+                                <a href="#"><i class="ik ik-edit-2"></i></a>
+                                <a href="#"><i class="ik ik-trash-2"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="qickview-wrap">
+                            <div class="desc">
+                                <p>{{mail.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            
+            <div class="card-body">
+                <table id="advanced_table" class="table">
+                    <thead>
+                        <tr>
+                            <th class="nosort" width="10">
+                                <label class="custom-control custom-checkbox m-0">
+                                    <input type="checkbox" class="custom-control-input" id="selectall" name="" value="option2">
+                                    <span class="custom-control-label">&nbsp;</span>
+                                </label>
+                            </th>
+                            <th class="nosort">Avatar</th>
+                            <th>Nombre</th>
+                            <th>Cargo</th>
+                            <th>Oficina</th>
+                            <th>Edad</th>
+                            <th>Fecha inicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of users | async">
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
+                                    <span class="custom-control-label">&nbsp;</span>
+                                </label>
+                            </td>
+                            <td><img src="{{user.image}}" class="table-user-thumb" alt="avatar"></td>
+                            <td>{{user.nombre}}</td>
+                            <td>{{user.cargo}}</td>
+                            <td>{{user.ofi}}</td>
+                            <td>{{user.edad}}</td>
+                            <td>{{user.fini}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

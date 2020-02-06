@@ -1,0 +1,60 @@
+use visorwebtia
+db.users.insertOne(
+   { "username" : "luiacarr",
+     "nombre":"Luis Carrasco",
+     "cargo":"Programador",
+     "ofi":"Norte",
+     "edad":"24",
+     "fini":"2015/08/06",
+     "sal":"$650",
+	 "image":"https://cdn.jsdelivr.net/gh/luiacarr/tiaadmin@master/src/assets/users/2.jpg"
+   }
+)
+
+db.users.insertOne(
+   { "username" : "ccunalat",
+     "nombre":"Carlos Cunalata",
+     "cargo":"Arquitectura Web",
+     "ofi":"Norte",
+     "edad":"25",
+     "fini":"2015/05/10",
+     "sal":"$650",
+	 "image":"https://cdn.jsdelivr.net/gh/luiacarr/tiaadmin@master/src/assets/users/1.jpg"
+   }
+)
+
+db.users.insertOne(
+   { "username" : "lfmonten",
+     "nombre":"Luis Montenegro",
+     "cargo":"Desarrollador Javascript",
+     "ofi":"Centro",
+     "edad":"25",
+     "fini":"2015/10/15",
+     "sal":"$650",
+	 "image":"https://cdn.jsdelivr.net/gh/luiacarr/tiaadmin@master/src/assets/users/4.jpg"
+   }
+)
+
+db.users.insertOne(
+   { "username" : "dmaroto",
+     "nombre":"Dayse Maroto",
+     "cargo":"Especialista en Diseño",
+     "ofi":"Sur",
+     "edad":"24",
+     "fini":"2016/05/03",
+     "sal":"$650",
+	 "image":"https://cdn.jsdelivr.net/gh/luiacarr/tiaadmin@master/src/assets/users/3.jpg"
+   }
+)
+
+db.mails.insertOne({"username":"luiacarr","nombre":"Luis Carrasco","asunto":"Informe de avance","content":"Avance del proyecto para presentacion usando api"})
+
+db.mails.insertOne({"username":"ccunalat","nombre":"Carlos Cunalata","asunto":"Entrega de avance","content":"Recordatorio de entrega de avance para la porxima semana."})
+
+db.mails.insertOne({"username":"dmaroto","nombre":"Dayse Maroto","asunto":"Implementacion del CRUD","content":"CRUD implementado usando django."})
+
+db.actividades.insertOne({"hour":"10 am","incharge":"Programador","desc":"Implementacion de API"})
+
+db.actividades.insertOne({"hour":"11 am","incharge":"Arquitectura Web","desc":"Estructura  del API"})
+
+db.actividades.insertOne({"hour":"12 am","incharge":"Especialista en Diseño","desc":"Views para el API"})

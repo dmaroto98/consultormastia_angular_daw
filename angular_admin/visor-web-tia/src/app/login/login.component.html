@@ -1,0 +1,57 @@
+<div class="auth-wrapper">
+    <div class="container-fluid h-100">
+        <div class="row flex-row h-100 bg-white">
+            <div class="col-xl-8 col-lg-6 col-md-5 p-0 d-md-block d-lg-block d-sm-none d-none">
+                <div class="lavalite-bg" style="background-image: url('static/img/auth/login-bg.jpg')">
+                    <div class="lavalite-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-7 my-auto p-0">
+                <div class="authentication-form mx-auto">
+                    <div class="logo-centered">
+                        <a href="login.html"><img src="static/src/img/tia.ico" alt=""></a>
+                    </div>
+                    <h3>Ingresar a Admin - Tia</h3>
+                    <p>Estamos felices de verte de nuevo!</p>
+                    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+                        <div class="form-group" [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+                            <input class="form-control" type="email" placeholder="Email" formControlName="email" required>
+                            <i class="ik ik-user"></i>
+                        </div>
+
+                        <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+                            <div *ngIf="formControls.email.errors.required">Email is required</div>
+                          </div>
+
+                        <div class="form-group" [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+                            <input class="form-control" type="password" placeholder="Password" formControlName="password" required>
+                            <i class="ik ik-lock"></i>
+                        </div>
+
+                        <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+                            <div *ngIf="formControls.password.errors.required">Password is required</div>
+                          </div>
+
+                        <div class="row">
+                            <div class="col text-left">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option1">
+                                    <span class="custom-control-label">&nbsp;Recuerdame </span>
+                                </label>
+                            </div>
+                            <div class="col text-right">
+                                <a href="forgot-password.html">Olvidaste tu contraseña ?</a>
+                            </div>
+                        </div>
+                        <div class="sign-btn text-center">
+                            <button class="btn btn-theme">Ingresar</button>
+                        </div>
+                    </form>
+                    <div class="register">
+                        <p>No tienes una cuenta? <a href="register.html">Crear una cuenta</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

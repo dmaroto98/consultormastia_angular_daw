@@ -1,0 +1,124 @@
+<div id="bienvenido">
+  <img src="/static/img/Bienvenidos.png" style="margin: -12% 10px -18% -3.5%" width="80%" height="85%" alt="">
+</div>
+<div id="usuario" style="width: 15%; margin: 4% 0px -4.7% 18.5%;">
+  <img src="/static/img/icon-user1.png" width="100%" height="25%" alt="">
+</div>
+<div style="width:60%; margin: 0% 0px 0% 22%;">
+  <form method="GET" class="form-inline my-2 my-lg-0" action="/presentar.html" >
+      <div id="U-consulta" style="width: 80%;margin: 1% 0px 20px 15%">
+          <input class="form-control mr-sm-8" id="write" style="width: 100%;" name="txf_consulta"
+              autocomplete="off" type="search" placeholder="INGRESE C.I" aria-label="Search" required
+              minlength="10" maxlength="16"data-intro="Ingresar su número de cédula">
+      </div>
+
+      <div  id="teclado" class="center" style="width:110%; margin: 0% 0px 0px -15%;">
+          <div clas="consulte-puntos" style="width:117%">
+              <form class="form-horizontal" role="form" id="form_id" >
+                  <div id="txf_consulta">
+                      <ul id="keyboard" style="width:110%; margin: 2% 0px 0px 0%;">
+                          <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+                          <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+                          <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+                          <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+                          <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+                          <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+                          <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+                          <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+                          <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+                          <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+                          <!--<div id="q">-->
+                          <li class="letter">Q</li>
+                          <!--</div>-->
+                          <li class="letter">W</li>
+                          <li class="letter">E</li>
+                          <li class="letter">R</li>
+                          <li class="letter">T</li>
+                          <li class="letter">Y</li>
+                          <li class="letter">U</li>
+                          <li class="letter">I</li>
+                          <li class="letter">O</li>
+                          <li class="letter">P</li>
+                          <!--<div id="a">-->
+                          <li class="letter">A</li>
+                          <!--</div>-->
+                          <li class="letter">S</li>
+                          <li class="letter">D</li>
+                          <li class="letter">F</li>
+                          <li class="letter">G</li>
+                          <li class="letter">H</li>
+                          <li class="letter">J</li>
+                          <li class="letter">K</li>
+                          <li class="letter">L</li>
+                          <li class="letter">Ñ</li>
+                          <!--<div id="z">-->
+                          <li class="letter">Z</li>
+                          <!--</div>-->
+                          <li class="letter">X</li>
+                          <li class="letter">C</li>
+                          <li class="letter">V</li>
+                          <li class="letter">B</li>
+                          <li class="letter">N</li>
+                          <li class="letter">M</li>
+                          <li class="letter" style="font-weight: bold;">-</li>
+                          <li class="limpiar btn_limpiar">BORRAR</li>
+                          <li class="delete lastitem" style="width: 9%">
+                              <div><img id="img-logo1" src="/static/img/backspace.png" alt=""></div>
+                          </li>
+                      </ul>
+                  </div>
+
+              </form>
+          </div>
+
+          <div class="row" style="margin: 15% 0px 2.2% 0px">
+              <div class="col-md-6 text-left">
+                  <div style="width: 38%; margin: 0 auto; text-align: left">
+                      <button id="btn_regresar" type="button" style="border-color:transparent"
+                          class="btn btn-primary btn-lg" routerLink="/main" data-intro="Regresar el menú principal">
+                          <!--<img id="btn-regresar" src="../../static/img/btn-regresar.png" alt="">-->
+                      </button>
+                  </div>
+              </div>
+
+              <div class="col-md-6 text-left">
+                  <div style="width: 38%; margin: 0% 0px 0px 43%; text-align: left">
+                      <button id="btn_buscar" style="border-color:transparent" type="submit"
+                          class="btn btn-primary btn-lg"  routerLink="/presentar"data-intro="Enviar datos ingresados">
+                          <!--<img id="btn-regresar" src="../../static/img/consultar.png" alt="">-->
+                      </button>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </form>
+
+</div>
+<!--#################################################### Alert de bootstrap ####################################################################-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">La caja de texto esta vacia!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <!--if message, message else, ingrese su cedula- Estaba con la notacion de corchetes de dJango-->
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<br>
+  <br>
+  <br>
+
+

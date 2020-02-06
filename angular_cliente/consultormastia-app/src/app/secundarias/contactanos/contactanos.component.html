@@ -1,0 +1,88 @@
+<section>
+  <!-- Start contact Area -->
+  <div id="contact" class="contact-area" >
+    <div class="contact-inner area-padding">
+      <div class="contact-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h1>Contáctanos</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Start Google Map -->
+          <div class="col-md-6 col-sm-6 col-xs-12" data-intro="Mapa de los locales de Tía">
+            <!-- Start Map -->
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8831776884085!2d-79.93508864955051!3d-2.19787153791217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d71f049f8d10d%3A0x6ba8e24bed5bdfa6!2sT%C3%8DA%2038%20y%20Portete!5e0!3m2!1ses!2sec!4v1576157490337!5m2!1ses!2sec"
+              width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- End Map -->
+          </div>
+          <!-- End Google Map -->
+          <!-- contact area -->
+          <div class="container mt-5">
+            <h2>Formulario de contacto</h2>
+            <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+            <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="form-control" name="nombre" ngModel>
+            </div>
+            <div class="form-group">
+            <label>Asunto</label>
+            <input type="text" class="form-control" name="asunto" ngModel>
+            </div>
+            <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" class="form-control" name="email" ngModel>
+            </div>
+            <div class="form-group">
+            <label>Mensaje</label>
+            <textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+           </div>
+
+          <!-- finish contact area -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Area -->
+</section>
+
+<br>
+<br>
+<br>
+
+
+<!-- JavaScript Libraries -->
+<script src="./assets2/lib/jquery/jquery.min.js"></script>
+<script src="./assets2/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets2/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="./assets2/lib/venobox/venobox.min.js"></script>
+<script src="./assets2/lib/knob/jquery.knob.js"></script>
+<script src="./assets2/lib/wow/wow.min.js"></script>
+<script src="./assets2/lib/parallax/parallax.js"></script>
+<script src="./assets2/lib/easing/easing.min.js"></script>
+<script src="./assets2/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="./assets2/lib/appear/jquery.appear.js"></script>
+<script src="./assets2/lib/isotope/isotope.pkgd.min.js"></script>
+<!-- Contact Form JavaScript File -->
+<script src="./assets2/contactform/contactform.js"></script>
+<script src="./assets2/js/main.js"></script>
+
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+<!-- Introjs -->
+<script src="./static/js/intro.js"></script>
